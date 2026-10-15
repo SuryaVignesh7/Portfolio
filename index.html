@@ -3,58 +3,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Kota Yasasvi Surya Vignesh — Aerospace Engineering portfolio covering rocket propulsion, high-speed CFD, aerostructures, UAV integration, and space mission design.">
+  <meta name="description" content="Kota Yasasvi Surya Vignesh — Aerospace Engineering Portfolio covering rocket propulsion, high-speed CFD, aerostructures, and space mission design.">
   <title>Kota Yasasvi Surya Vignesh | Aerospace Engineering Portfolio</title>
   <style>
-    :root {
-      --bg: #090d16;
-      --card-bg: #121824;
-      --surface-accent: #1a2234;
-      --line: #222f44;
-      --line-subtle: #192335;
-      --ink: #e2e8f0;
-      --ink-bright: #ffffff;
-      --muted: #94a3b8;
-      --accent: #38bdf8;
-      --accent-glow: rgba(56, 189, 248, 0.12);
-      --font-body: "Times New Roman", Times, Georgia, serif;
-      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: var(--font-body);
+      padding: 0;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #0d1117;
+      color: #e6edf3;
+      font-family: "Times New Roman", Times, Georgia, serif;
       font-size: 17.5px;
       line-height: 1.6;
+      padding: 0;
+      margin: 0;
     }
-
     a {
-      color: var(--accent);
+      color: #58a6ff;
       text-decoration: none;
       text-underline-offset: 3px;
-      transition: color 0.15s ease;
     }
     a:hover {
-      color: #7dd3fc;
+      color: #79c0ff;
       text-decoration: underline;
     }
-
     .wrap {
       width: min(1080px, 92%);
-      margin: auto;
+      margin: 0 auto;
     }
 
-    /* HEADER & NAV */
+    /* HEADER */
     header {
-      border-bottom: 1px solid var(--line);
-      background: rgba(9, 13, 22, 0.95);
-      backdrop-filter: blur(8px);
+      background-color: #161b22;
+      border-bottom: 1px solid #30363d;
       position: sticky;
       top: 0;
       z-index: 50;
@@ -63,59 +49,56 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 18px;
       padding: 14px 0;
       flex-wrap: wrap;
+      gap: 16px;
     }
     .brand {
-      font-family: var(--font-sans);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-size: 15px;
       font-weight: 700;
-      color: var(--ink-bright);
+      color: #ffffff;
       letter-spacing: 0.5px;
       text-transform: uppercase;
     }
     nav {
       display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      font-family: var(--font-sans);
+      gap: 18px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-size: 14px;
       font-weight: 500;
     }
     nav a {
-      color: var(--muted);
+      color: #8b949e;
     }
     nav a:hover {
-      color: var(--ink-bright);
+      color: #ffffff;
       text-decoration: none;
     }
 
-    /* HERO SECTION */
+    /* HERO */
     .hero {
-      padding: 68px 0 52px;
-      border-bottom: 1px solid var(--line);
-      background: radial-gradient(circle at 85% 20%, rgba(56, 189, 248, 0.08) 0%, transparent 60%);
+      padding: 64px 0 48px;
+      border-bottom: 1px solid #30363d;
+      background: radial-gradient(circle at 85% 15%, rgba(56, 189, 248, 0.08) 0%, transparent 60%);
     }
     .kicker {
-      font-family: var(--font-sans);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-size: 12.5px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.18em;
-      color: var(--accent);
-      margin-bottom: 12px;
+      letter-spacing: 0.16em;
+      color: #58a6ff;
+      margin-bottom: 10px;
     }
     h1 {
-      font-size: clamp(34px, 5.5vw, 56px);
-      line-height: 1.08;
-      letter-spacing: -0.02em;
-      color: var(--ink-bright);
-      margin: 0 0 16px;
-      max-width: 850px;
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.1;
+      color: #ffffff;
+      margin-bottom: 14px;
     }
     .lead {
-      font-size: 20px;
+      font-size: 19.5px;
       color: #cbd5e1;
       max-width: 820px;
       line-height: 1.5;
@@ -124,22 +107,21 @@
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
-      margin-top: 26px;
+      margin-top: 24px;
     }
     .btn {
       display: inline-block;
       padding: 10px 18px;
-      border: 1px solid var(--accent);
+      border: 1px solid #38bdf8;
       border-radius: 4px;
-      font-family: var(--font-sans);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-size: 14px;
       font-weight: 600;
       cursor: pointer;
-      transition: all 0.15s ease;
     }
     .btn.primary {
-      background: var(--accent);
-      color: #070d18;
+      background: #38bdf8;
+      color: #0d1117;
     }
     .btn.primary:hover {
       background: #7dd3fc;
@@ -147,16 +129,16 @@
     }
     .btn.secondary {
       background: transparent;
-      color: var(--ink-bright);
-      border-color: var(--line);
+      color: #ffffff;
+      border-color: #30363d;
     }
     .btn.secondary:hover {
-      border-color: var(--accent);
-      color: var(--accent);
+      border-color: #38bdf8;
+      color: #38bdf8;
       text-decoration: none;
     }
 
-    /* DOMAINS GRID */
+    /* DOMAINS */
     .domains {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -164,21 +146,21 @@
       margin-top: 36px;
     }
     .domain {
-      background: var(--card-bg);
-      border: 1px solid var(--line);
-      padding: 16px 18px;
-      border-radius: 5px;
+      background: #161b22;
+      border: 1px solid #30363d;
+      padding: 16px;
+      border-radius: 6px;
     }
     .domain strong {
       display: block;
-      font-family: var(--font-sans);
-      font-size: 15px;
-      color: var(--ink-bright);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 14.5px;
+      color: #ffffff;
       margin-bottom: 4px;
     }
     .domain span {
-      color: var(--muted);
-      font-size: 14px;
+      color: #8b949e;
+      font-size: 13.5px;
       line-height: 1.4;
       display: block;
     }
@@ -186,33 +168,410 @@
     /* SECTIONS */
     section {
       padding: 56px 0;
-      border-bottom: 1px solid var(--line);
+      border-bottom: 1px solid #30363d;
     }
     .section-head {
-      margin-bottom: 30px;
+      margin-bottom: 28px;
     }
     .eyebrow {
-      font-family: var(--font-sans);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: var(--accent);
+      color: #38bdf8;
     }
     h2 {
-      font-size: 32px;
-      color: var(--ink-bright);
+      font-size: 30px;
+      color: #ffffff;
       margin: 6px 0 4px;
-      line-height: 1.15;
     }
     h3 {
-      font-size: 21px;
-      color: var(--ink-bright);
-      line-height: 1.25;
-      margin: 0 0 10px;
+      font-size: 20px;
+      color: #ffffff;
+      margin: 0 0 8px;
     }
     .sub {
-      color: var(--muted);
-      margin-top: 4px;
-      font-size: 16px;
+      color: #8b949e;
+      font-size: 15.5px;
     }
+
+    /* PROJECT CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+    .card {
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #161b22;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-body {
+      padding: 22px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .meta {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #38bdf8;
+      margin-bottom: 8px;
+    }
+    .card p {
+      margin: 8px 0;
+      color: #cbd5e1;
+      font-size: 15.5px;
+    }
+    .card ul {
+      padding-left: 20px;
+      margin: 10px 0 16px;
+      color: #cbd5e1;
+      font-size: 15px;
+      flex: 1;
+    }
+    .card li {
+      margin: 6px 0;
+    }
+    .card strong {
+      color: #ffffff;
+    }
+
+    /* FIGURES & IMAGES */
+    .figure {
+      background: #0d1117;
+      border-bottom: 1px solid #30363d;
+      padding: 10px;
+      text-align: center;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 360px;
+      object-fit: contain;
+      border: 1px solid #30363d;
+      border-radius: 4px;
+      background: #0d1117;
+    }
+    .caption {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 12px;
+      color: #8b949e;
+      padding: 8px 4px 0;
+      text-align: left;
+      width: 100%;
+    }
+
+    .tagrow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: auto;
+      padding-top: 12px;
+    }
+    .tag {
+      background: #21262d;
+      border: 1px solid #30363d;
+      color: #93c5fd;
+      border-radius: 3px;
+      padding: 3px 8px;
+      font-family: ui-monospace, monospace;
+      font-size: 12px;
+    }
+
+    /* TIMELINE */
+    .timeline {
+      display: grid;
+      gap: 14px;
+    }
+    .role {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      gap: 22px;
+      padding: 18px 0;
+      border-bottom: 1px solid #30363d;
+    }
+    .date {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #38bdf8;
+    }
+    .role h3 {
+      font-size: 18.5px;
+      margin-bottom: 4px;
+    }
+    .role p {
+      color: #cbd5e1;
+      font-size: 15.5px;
+      margin: 4px 0;
+    }
+
+    /* SKILLS */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+    .skill {
+      padding: 18px 20px;
+      border: 1px solid #30363d;
+      background: #161b22;
+      border-radius: 6px;
+    }
+    .skill h3 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+      color: #38bdf8;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+    .skill p {
+      margin: 0;
+      color: #cbd5e1;
+      font-size: 15px;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: #090d16;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .contact-card {
+      padding: 22px;
+      border: 1px solid #30363d;
+      background: #161b22;
+      border-radius: 6px;
+    }
+    .contact-card h3 {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 13.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #38bdf8;
+      margin-bottom: 6px;
+    }
+    .contact-card p {
+      margin: 4px 0;
+      color: #e6edf3;
+      font-size: 16px;
+      overflow-wrap: anywhere;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 28px 0;
+      color: #8b949e;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 13px;
+      text-align: center;
+      border-top: 1px solid #30363d;
+      background: #0d1117;
+    }
+
+    @media (max-width: 820px) {
+      .domains, .grid, .skills, .contact-grid { grid-template-columns: 1fr; }
+      .role { grid-template-columns: 1fr; gap: 4px; }
+      .hero { padding: 44px 0 32px; }
+      nav { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top">KYSV &bull; Aerospace Engineering</a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="kicker">Undergraduate Aerospace Engineer &bull; UPES Dehradun</div>
+        <h1>Kota Yasasvi<br>Surya Vignesh</h1>
+        <p class="lead">Aerospace engineering undergraduate focused on rocket propulsion, multiphase spray dynamics, high-speed compressible CFD, aerostructures FEA, and satellite constellation mission design.</p>
+        
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore Projects &darr;</a>
+          <a class="btn secondary" href="KotaYasasviSuryaVignesh_Portfolio.pdf" target="_blank">Download Master Portfolio (PDF) &darr;</a>
+        </div>
+
+        <div class="domains">
+          <div class="domain">
+            <strong>Rocket Propulsion &amp; Sprays</strong>
+            <span>Pintle injectors, discrete phase atomization, empirical modeling</span>
+          </div>
+          <div class="domain">
+            <strong>Gas Dynamics &amp; Reactive CFD</strong>
+            <span>ANSYS Fluent, altitude compensation, MOC nozzle design</span>
+          </div>
+          <div class="domain">
+            <strong>Aerostructures &amp; FEA</strong>
+            <span>10m semi-span wing box, static compliance, modal extraction</span>
+          </div>
+          <div class="domain">
+            <strong>Applied Flight Mechanics</strong>
+            <span>Rafale drag polars, power required curves, glide envelopes</span>
+          </div>
+          <div class="domain">
+            <strong>Orbital Mechanics &amp; STK</strong>
+            <span>LEO constellation trade studies, revisit density, FOM coverage</span>
+          </div>
+          <div class="domain">
+            <strong>Robotics &amp; Unmanned Systems</strong>
+            <span>Inertia relief structural FEA, solar thermography drones</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Technical Portfolio</div>
+          <h2>Projects &amp; Investigations</h2>
+          <p class="sub">Computational models, analytical derivations, and empirical frameworks across aerospace sub-disciplines.</p>
+        </div>
+
+        <div class="grid">
+
+          <!-- 1. PINTLE INJECTOR -->
+          <article class="card">
+            <div class="figure">
+              <img src="images/portfolio-page-2.png" alt="Pintle injector CAD, Fluent DPM particle tracking, and MATLAB droplet sensitivity curves">
+              <div class="caption">Figure 1: CATIA V5 pintle geometry, ANSYS Fluent DPM tracking, and MATLAB empirical sensitivity curves.</div>
+            </div>
+            <div class="card-body">
+              <div class="meta">Major Capstone &bull; Aug 2026–Present</div>
+              <h3>Primary Atomization in Liquid Rocket Engines</h3>
+              <p>Characterization of single-propellant radial-hole pintle injector spray dynamics using multi-parameter empirical formulations and multiphase CFD tracking.</p>
+              <ul>
+                <li><strong>Hardware CAD Modeling:</strong> Replicated the UPES liquid propulsion experimental test rig in CATIA V5 with dedicated internal propellant distribution manifolds.</li>
+                <li><strong>20-Parameter Analytical Framework:</strong> Programmed a comprehensive MATLAB solver taking geometric dimensions, fluid properties, and injection &Delta;P to compute Sauter Mean Diameter (D₃₂), breakup intact length (L<sub>b</sub>), and spray cone angle (&theta;).</li>
+                <li><strong>Multiphase DPM Tracking:</strong> Coupled ANSYS Fluent pressure-based solver with Discrete Phase Modeling (DPM) to track 500 discrete droplets as a proof-of-concept for spray cone expansion within mesh boundaries.</li>
+              </ul>
+              <div class="tagrow">
+                <span class="tag">MATLAB</span>
+                <span class="tag">ANSYS Fluent DPM</span>
+                <span class="tag">CATIA V5</span>
+                <span class="tag">Spray Mechanics</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. AEROSPIKE VS BELL -->
+          <article class="card">
+            <div class="figure">
+              <img src="images/portfolio-page-4.png" alt="Mach contours comparing Bell CD vs Aerospike nozzle across four flight altitudes">
+              <div class="caption">Figure 2: 2D axisymmetric Mach number contours for Bell CD (left) vs. Aerospike (right) at 0, 5, 10, and 15 km.</div>
+            </div>
+            <div class="card-body">
+              <div class="meta">CFD Investigation &bull; Jul 2026–Present</div>
+              <h3>Aerospike vs. Convergent-Divergent Nozzles</h3>
+              <p>Comparative compressible gas dynamics study evaluating altitude compensation mechanisms between an annular aerospike and a conventional Bell CD nozzle.</p>
+              <ul>
+                <li><strong>MOC Supersonic Profiling:</strong> Traced inviscid expansion contours using Method of Characteristics coordinates for both nozzle geometries.</li>
+                <li><strong>Matched Throat Area:</strong> Enforced identical throat area (A<sub>t</sub> = 314.16 mm&sup2;) to guarantee equal mass flow rates at P₀ = 2 MPa and T₀ = 300 K.</li>
+                <li><strong>Multi-Altitude Matrix:</strong> Solved 2D axisymmetric density-based Navier-Stokes equations with k-&omega; SST across 0 km (1.013 bar), 5 km (0.540 bar), 10 km (0.265 bar), and 15 km (0.121 bar), demonstrating that the aerospike eliminates severe over-expansion shock separation.</li>
+              </ul>
+              <div class="tagrow">
+                <span class="tag">ANSYS Fluent</span>
+                <span class="tag">SpaceClaim</span>
+                <span class="tag">Method of Characteristics</span>
+                <span class="tag">Gas Dynamics</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. RAFALE FLIGHT MECHANICS -->
+          <article class="card">
+            <div class="figure">
+              <img src="images/portfolio-page-5.png" alt="Rafale 3D CFD pathlines, drag polar curves, and Power Required vs Available envelope">
+              <div class="caption">Figure 3: 3D Rafale surface contours, canard downwash pathlines, and flight performance drag/power envelopes.</div>
+            </div>
+            <div class="card-body">
+              <div class="meta">PBL Project &bull; Apr–Jun 2026</div>
+              <h3>Dassault Rafale Flight Performance Envelope</h3>
+              <p>Analytical mission-performance sizing paired with an exploratory 3D viscous CFD investigation on a coupled delta-canard fighter airframe.</p>
+              <ul>
+                <li><strong>Analytical Mission Polar:</strong> Sized baseline geometry (S = 45.6 m&sup2;, AR = 2.60) to model zero-lift drag (C<sub>D0</sub> = 0.02) and induced drag factor (K = 0.122) across operational flight regimes.</li>
+                <li><strong>Performance Limits:</strong> Determined maximum aerodynamic efficiency (L/D)<sub>max</sub> &approx; 9.30 at 175 m/s, maximum unpowered glide range &gt; 102 km from 11 km cruise, and peak rate of climb (R/C) &gt; 93 m/s.</li>
+                <li><strong>Power Curve Intersection:</strong> Located level-flight maximum velocity (V<sub>max</sub> &approx; 515 m/s) where Power Required intersects Power Available (P<sub>avail</sub> = T &times; V).</li>
+                <li><strong>Viscous CFD Exploration:</strong> Evaluated canard vortex shedding and downwash over the delta wing in ANSYS Fluent under a 512k student cell constraint.</li>
+              </ul>
+              <div class="tagrow">
+                <span class="tag">Flight Mechanics</span>
+                <span class="tag">MATLAB</span>
+                <span class="tag">Excel Analytics</span>
+                <span class="tag">ANSYS Fluent</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. WING AEROSTRUCTURES FEA -->
+          <article class="card">
+            <div class="figure">
+              <img src="images/portfolio-page-6.png" alt="10m semi-span wing CAD framework, static deflection under 30 kN, and modal flutter shapes">
+              <div class="caption">Figure 4: 10 m semi-span internal framework CAD, static bending compliance, and natural frequency modes.</div>
+            </div>
+            <div class="card-body">
+              <div class="meta">Aerostructures &bull; Apr 2026–Present</div>
+              <h3>Tapered Fighter Wing Structural Analysis</h3>
+              <p>Internal structural sizing, static bending compliance, and modal dynamic analysis of a 10.0 m semi-span wing box using aerospace-grade alloy properties.</p>
+              <ul>
+                <li><strong>Internal Framework:</strong> Designed front and rear I-beam spars, 13 transverse ribs with weight-reduction lightening holes, and spanwise skin stringers in Aluminum 7075-T6 (F<sub>ty</sub> = 503 MPa, E = 71.7 GPa).</li>
+                <li><strong>Static Load Deflection:</strong> Applied a 30 kN upward flight load with cantilever root support, resolving an elastic tip deflection of 0.295 m (2.95% of semi-span) and peak von Mises stress of 79.89 MPa (&lt; 16% of yield).</li>
+                <li><strong>Modal Flutter Separation:</strong> Extracted the first 6 natural frequencies, identifying Mode 1 out-of-plane bending (1.49 Hz), Mode 2 second bending (4.87 Hz), and Mode 3 torsion (6.18 Hz).</li>
+              </ul>
+              <div class="tagrow">
+                <span class="tag">ANSYS Mechanical</span>
+                <span class="tag">CATIA V5</span>
+                <span class="tag">SolidWorks</span>
+                <span class="tag">Structural Dynamics</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. UAV AIRFRAME & THERMOGRAPHY -->
+          <article class="card">
+            <div class="figure">
+              <img src="images/portfolio-page-7.png" alt="F450 multirotor CAD model, radiometric camera gimbal mount, and inertia relief stress FEA">
+              <div class="caption">Figure 5: Customized multirotor CAD assembly, 2-axis gimbal mount, and inertia relief full-vehicle FEA.</div>
+            </div>
+            <div class="card-body">
+              <div class="meta">UAV Integration &bull; 2025–2026</div>
+              <h3>Solar-Panel Thermal Inspection Multirotor</h3>
+              <p>Custom multirotor platform engineered for automated photovoltaic panel inspection using an isolated radiometric thermal sensor mount.</p>
+              <ul>
+                <li><strong>Airframe &amp; Gimbal Packaging:</strong> Sized a 3.0 kg AUW quadcopter in SolidWorks featuring custom center plates, reinforced arm brackets, and a 2-axis stabilized gimbal with anti-vibration damping grommets.</li>
+                <li><strong>Cantilever Joint Analysis:</strong>
